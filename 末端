@@ -1,0 +1,13 @@
+javascript
+document.querySelectorAll('.buy-button').forEach(button => {
+    button.addEventListener('click', function() {
+        const stockItem = this.parentElement;
+        const stockName = stockItem.querySelector('.stock-name').innerText;
+        const stockPrice = stockItem.querySelector('.stock-price').innerText;
+
+        const portfolioList = document.getElementById('portfolio-list');
+        const newItem = document.createElement('li');
+        newItem.innerText = `${stockName} - ${stockPrice}`;
+        portfolioList.appendChild(newItem);
+    });
+});
