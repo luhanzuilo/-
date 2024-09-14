@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>股票游戏</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>股票模拟游戏</h1>
+        </header>
+        <main>
+            <div class="stock-list">
+                <h2>可购买股票</h2>
+                <ul>
+                    <li>
+                        <span class="stock-name">股票A</span>
+                        <span class="stock-price">价格: $100</span>
+                        <button class="buy-button">购买</button>
+                    </li>
+                    <li>
+                        <span class="stock-name">股票B</span>
+                        <span class="stock-price">价格: $200</span>
+                        <button class="buy-button">购买</button>
+                    </li>
+                    <li>
+                        <span class="stock-name">股票C</span>
+                        <span class="stock-price">价格: $150</span>
+                        <button class="buy-button">购买</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="portfolio">
+                <h2>我的投资组合</h2>
+                <ul id="portfolio-list">
+                    <!-- 购买的股票将显示在这里 -->
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2023 股票游戏</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
